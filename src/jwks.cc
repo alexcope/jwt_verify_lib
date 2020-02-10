@@ -353,7 +353,6 @@ JwksPtr Jwks::createFrom(const std::string& pkey, Type type) {
 
 // pkey_pem must be a PEM-encoded PKCS #8 public key.
 // This is the format that starts with -----BEGIN PUBLIC KEY-----.
-// Currently this only supports RSA. Support for ECC will be added soon.
 void Jwks::createFromPemCore(const std::string& pkey_pem) {
   keys_.clear();
   PubkeyPtr key_ptr(new Pubkey());
