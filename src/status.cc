@@ -124,7 +124,7 @@ std::string getStatusString(Status status) {
 
     case Status::PemNotImplementedKty:
       return "PEM Key type is not supported";
-    case Status::PemPemParseError:
+    case Status::PemParseError:
       return "PEM pubkey parse fails";
 
     case Status::BioAllocError:
