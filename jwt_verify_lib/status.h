@@ -153,7 +153,7 @@ enum class Status {
   // Key type is not supported.
   PemNotImplementedKty,
   // Unable to parse public key
-  PemPemParseError,
+  PemParseError,
 
   // Failed to create BIO
   BioAllocError,
